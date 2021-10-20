@@ -560,7 +560,7 @@ ul{
   .quality .njeriu{
     position:absolute;
         top: 30px;
-        left: 217px;
+        left: 147px;
         z-index: 2;
         width: 134px;
   }
@@ -569,7 +569,7 @@ ul{
     line-height: 25px;
     font-size: 13px;
     padding: 115px 110px;
-   margin-left: -110px;
+   margin-left: -210px;
    
   
   }
@@ -582,12 +582,11 @@ ul{
     font-size: 16px;
     
     }
-    .about .row {
-      display: flex;
-      flex-direction: column;
-      
-      
-    }
+  .about .row {
+    display: flex;
+    flex-direction: column;
+  }
+    
   
   .services2{
     height: 80vh;
@@ -600,7 +599,7 @@ ul{
     font-size: 20px;
     padding: 115px 20px;
     text-align: center;
-    margin-top: -150px;
+    margin-top: -120px;
    }
    .footer{
       width: 130%;
