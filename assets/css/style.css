@@ -96,17 +96,9 @@ nav {
 	height: 100px;
   background-color: #505d61;
 }
-nav .logo {
-	float: left;
-	width: 40%;
-	height: 100%;
-	display: flex;
-	align-items: center;
-	font-size: 24px;
-	color: #fff;
-}
+
 nav .links {
-	float: right;
+float: right;
 	padding: 0;
 	margin: 0;
 	width: 60%;
@@ -318,109 +310,7 @@ nav .icons2 .line {
 }
 
 
-.buy {
-  
-  width: 1000px;
-  padding-top: 60px;
-  padding-bottom: 90px;
-  
-}
 
-.buy-items {
-  width: 1000px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  line-height: 55px;
-}
-
-.main4 {
-  color: rgb(143, 15, 15);
-  padding: 100px;
-  margin-left: 500px;
-  margin-top: -150px;
-  text-align: center;
-  font-size: 20px;
-}
-
-.rowbox {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    flex-direction: row;
-    margin-left: 450px;
-}
-
-.row2 {
-  background-color: white;
-  padding: 173px;
-  margin: 50px;
-  margin-left: 120px;
-  height: 515px;
-  width: 350px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  border-radius: 25px;
-  -webkit-box-shadow: 5px 5px 15px 5px #CECECE; 
-  box-shadow: 5px 5px 15px 5px #CECECE;
-}
-
-.klasa1 {
-  color: #fff;
-  text-align: center;
-  padding: 40px 100px;
-  background: #ee619c;
-  margin-bottom: 40px;
-  margin-top: 5px;
-  border-radius: 20px;
-}
-
-
-.ul {
-  margin-bottom: 0px;
-  display: flex;
-  flex-direction: row;
-}
-
-.list{
-  display: flex;
-  flex-direction: column;
-  width: 350px;
-  justify-content: center;
-  align-items: center;
-  
-}
-
-.list li{
-  margin-bottom: 15px;
-  text-decoration: line-through;
-
-}
-
-.active{
-  text-decoration: none !important;
-}
-
-.teksti {
-  height: 47px;
-  font-weight: 500;
-  font-size: 32px;
-}
-
-.stronk {
-  margin-top: -55px;
-}
-
-.butoni {
-  width: 200px;
-  font-weight: bolder;
-  padding: 15px 30px;
-  border-radius: 30px;
-  background-color: #7ddd50;
-  color: #fff;
-}
 .about {
   background-color: #f8f9fa;
   padding: 80px 0px;
@@ -667,41 +557,7 @@ ul{
    
   
   }
-  .buy {
   
-    width: 1000px;
-    padding-top: 60px;
-    padding-bottom: 90px;
-    
-  }
-  
-  .buy-items {
-    width: 1000px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    line-height: 55px;
-  }
-  
-  .main4 {
-    
-    font-size: 20px;
-    margin-left: -585px;
-  }
-  
-  .rowbox {
-      display: flex;
-      justify-content: center;
-      align-content: center;
-      flex-direction: column;
-      margin-left: 450px;
-  }
-  
-  .row2 {
-    
-    margin-left: -431px;
-    
-  }
   .services2{
     height: 80vh;
     width: 100%;
@@ -727,7 +583,7 @@ ul{
   }
   
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 812px) {
 	nav .logo {
 		float: none;
 		width: auto;
