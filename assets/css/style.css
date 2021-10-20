@@ -75,51 +75,75 @@ p {
   margin: 0px auto;
 }
 
-
-
-nav{
-	width: 100%;
-	height: 75px;
-	background-color: #505d61;
-	line-height: 75px;
-	padding:0px 100px;
-	position:fixed;
-	z-index: 1;
+.logo2 {
+  color: white;
+  line-height: 90px;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  margin-left: 20px;
+  font-family: 'Montserrat', sans-serif;
 }
-nav .logo{
-	font-size: 30px;
-	font-weight: bold;
-	letter-spacing: 1.5px; 
+
+nav {
+	position: fixed;
+	z-index: 10;
+	left: 0;
+	right: 0;
+	top: 0;
+	font-family: 'Montserrat', sans-serif;
+	padding: 0 5%;
+	height: 100px;
+  background-color: #505d61;
 }
-nav .logo p{
+nav .logo {
 	float: left;
-	color:#fff;
-	text-transform: uppercase;
+	width: 40%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	font-size: 24px;
+	color: #fff;
 }
-nav ul{
+nav .links {
 	float: right;
+	padding: 0;
+	margin: 0;
+	width: 60%;
+	height: 100%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
 }
-nav ul li{
-	display: inline-block;
+nav .links li {
 	list-style: none;
 }
-nav ul li a{
-	color:#fff;
+nav .links a {
+	display: block;
+	padding: 1em;
+	font-size: 16px;
+	font-weight: bold;
+	color: #fff;
 	text-decoration: none;
-	font-size: 18px;
-	text-transform: uppercase;
-	padding:0px 25px;
 }
-nav ul li a:hover{
-	color:#c0d96f;
+#nav-toggle {
+	position: absolute;
+	top: -100px;
 }
-nav ul li .active{
-	color:#c0d96f;
+nav .icons2 {
+	display: none;
+	position: absolute;
+	right: 5%;
+	top: 50%;
+	transform: translateY(-50%);
 }
-.image img{
-	width: 100%;
-	height: 0px auto;
-	opacity: 0.80;
+nav .icons2 .line {
+	width: 30px;
+	height: 5px;
+	background-color: #fff;
+	margin: 5px;
+	border-radius: 3px;
+	transition: all .3s ease-in-out;
 }
 .legend{
   height: 120vh;
@@ -691,5 +715,46 @@ ul{
   }
   
 }
-
-  
+@media screen and (max-width: 600px) {
+	nav .logo {
+		float: none;
+		width: auto;
+		justify-content: center;
+	}
+	nav .links {
+		float: none;
+		position: fixed;
+		z-index: 9;
+		left: 0;
+		right: 0;
+		top: 100px;
+		bottom: 100%;
+		width: auto;
+		height: auto;
+		flex-direction: column;
+		justify-content: space-evenly;
+		background-color: rgba(0,0,0,.8);
+		overflow: hidden;
+		box-sizing: border-box;
+		transition: all .5s ease-in-out;
+	}
+	nav .links a {
+		font-size: 20px;
+	}
+	nav :checked ~ .links {
+		bottom: 0;
+	}
+	nav .icons2 {
+		display: block;
+	}
+	nav :checked ~ .icons2.line:nth-child(1) {
+		transform: translateY(10px) rotate(225deg);
+	}
+	nav :checked ~ .icons2 .line:nth-child(3) {
+		transform: translateY(-10px) rotate(-225deg);
+	}
+	nav :checked ~ .icons2 .line:nth-child(2) {
+		opacity: 0;
+	}
+	
+}
