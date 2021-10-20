@@ -126,6 +126,18 @@ nav .links a {
 	color: #fff;
 	text-decoration: none;
 }
+li a.contact {
+  background-color: #00adb5;
+  padding: 9px 20px;
+  border-radius: 50px;
+  transition: all 0.3s linear 0s;
+}
+
+li a.contact:hover {
+  background-color: #047e85;
+  color: white;
+  border-bottom: none;
+}
 #nav-toggle {
 	position: absolute;
 	top: -100px;
