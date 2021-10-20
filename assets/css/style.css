@@ -64,6 +64,7 @@ p {
   color: rgb(0, 93, 105);
   background-color: #a5a5a5;
   margin-left: 10px;
+  width: 20%;
 }
 .btn-gray:hover {
   color: rgb(175, 106, 106);
@@ -117,7 +118,14 @@ nav .links a {
 	font-weight: bold;
 	color: #fff;
 	text-decoration: none;
+  border-bottom: #00adb5;
 }
+.links li a:hover {
+  color: #7ebcb9;
+  padding-bottom: 7px;
+  border-bottom: 2px solid #7ebcb9;
+}
+
 li a.contact {
   background-color: #00adb5;
   padding: 9px 20px;
@@ -174,7 +182,7 @@ nav .icons2 .line {
   display:flex;
   height: 80vh;
   width: 100%;
-  background-image: url(/assets/img/g.jpg);
+  background-image: url(/assets/img/g.jpg)
   background-repeat: no-repeat;
   background-position: center; 
   background-size: cover;
@@ -313,36 +321,39 @@ nav .icons2 .line {
 
 .about {
   background-color: #f8f9fa;
-  padding: 80px 0px;
-  display: flex;
-    flex-wrap: nowrap;
+  padding: 80px 20px;
+  
 }
 .about hgroup {
   margin-bottom: 50px;
-  text-align: left;
+  text-align: center;
 }
 .about hgroup h3 {
   font-family: "Poppins", sans-serif;
+  
+}
+.about .row {
+  display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	align-items: baseline;
+	align-content: stretch;
 }
 .about .row div {
-     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    
   }
 .about .row div i {
-  width: 70px;
-  height: 70px;
+  width: 90px;
+  height: 90px;
   border-radius: 50%;
-  line-height: 70px;
+  line-height: 90px;
   text-align: center;
-  font-size: 26px;
+  font-size: 36px;
   margin: 20px auto;
-  display: inline-block;
-  color: #4e66f8;
+   color: #f8bd4e;
   background-color: #e4e8fe;
-  border-radius: 50%;
-
-}
+  }
   
 
 .services2{
@@ -557,6 +568,15 @@ ul{
    
   
   }
+  .about .row div i {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    line-height: 70px;
+    
+    font-size: 16px;
+    
+    }
   
   .services2{
     height: 80vh;
@@ -581,9 +601,13 @@ ul{
      padding: 0 15px;
      margin-bottom: 65px;
   }
+  .btn-gray {
+    
+    width: 50%;
+  }
   
 }
-@media screen and (max-width: 812px) {
+@media (max-width: 600px) {
 	nav .logo {
 		float: none;
 		width: auto;
