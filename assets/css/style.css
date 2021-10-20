@@ -99,13 +99,13 @@ nav {
 }
 
 nav .links {
-float: right;
+  float: right;
 	padding: 0;
 	margin: 0;
 	width: 60%;
 	height: 100%;
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-evenly;
 	align-items: center;
 }
 nav .links li {
@@ -113,7 +113,7 @@ nav .links li {
 }
 nav .links a {
 	display: block;
-	padding: 1em;
+	padding: 10px;
 	font-size: 16px;
 	font-weight: bold;
 	color: #fff;
@@ -332,11 +332,12 @@ nav .icons2 .line {
   font-family: "Poppins", sans-serif;
   
 }
+
 .about .row {
   display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
-	justify-content: space-around;
+	justify-content: space-between;
 	align-items: baseline;
 	align-content: stretch;
 }
@@ -344,15 +345,19 @@ nav .icons2 .line {
     
   }
 .about .row div i {
-  width: 90px;
-  height: 90px;
+  width: 130px;
+  height: 130px;
   border-radius: 50%;
-  line-height: 90px;
+  line-height: 130px;
   text-align: center;
-  font-size: 36px;
+  font-size: 56px;
   margin: 20px auto;
-   color: #f8bd4e;
+  color: #f8bd4e;
   background-color: #e4e8fe;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  
   }
   
 
@@ -555,7 +560,7 @@ ul{
   .quality .njeriu{
     position:absolute;
         top: 30px;
-        left: 147px;
+        left: 217px;
         z-index: 2;
         width: 134px;
   }
@@ -564,7 +569,7 @@ ul{
     line-height: 25px;
     font-size: 13px;
     padding: 115px 110px;
-   margin-left: -210px;
+   margin-left: -110px;
    
   
   }
@@ -576,6 +581,12 @@ ul{
     
     font-size: 16px;
     
+    }
+    .about .row {
+      display: flex;
+      flex-direction: column;
+      
+      
     }
   
   .services2{
